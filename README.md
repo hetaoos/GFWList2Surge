@@ -6,5 +6,5 @@ usage:
 
 
 ```
-python main.py -i gfwlist.txt -f surge.conf -p "SOCKS5 192.168.1.17:1080;" --user-rule myrule --surge-proxy-name Proxy --surge-proxy "shadowsocks, 1.2.3.4, 443, rc4-md5, password"
+python main.py -f surge.conf -p "SOCKS5 192.168.1.17:1080;" --surge-proxy-name Proxy --surge-proxy "Proxy = custom, host, port, aes-256-cfb, password, http://hk2.zaiguilin.com/SSEncrypt.module"
 ```

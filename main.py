@@ -131,7 +131,7 @@ def generate_surge(domains, proxy_name, surge_proxy):
     # render the surge.conf file
     surge_conf_content = get_data_from_file('resources/surge.conf')
     rule = list()
-    rule_tpl = "DOMAIN-SUFFIX,{domain},{proxy_name}"
+    rule_tpl = "DOMAIN-SUFFIX,{domain},{proxy_name},force-remote-dns"
     for domain in domains:
         rule.append(rule_tpl.format(
                 domain=domain,
